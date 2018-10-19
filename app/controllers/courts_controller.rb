@@ -1,6 +1,6 @@
     # app/controllers/Courts_controller.rb
 class CourtsController < ApplicationController
-    before_action :set_Court, only: [:show, :update, :destroy]
+    before_action :set_court, only: [:show, :update, :destroy]
   
     # GET /Courts
     def index
@@ -10,7 +10,7 @@ class CourtsController < ApplicationController
   
     # POST /Courts
     def create
-      @Court = Court.create!(Court_params)
+      @Court = Court.create!(court_params)
       json_response(@Court, :created)
     end
   
@@ -21,7 +21,7 @@ class CourtsController < ApplicationController
   
     # PUT /Courts/:id
     def update
-      @Court.update(Court_params)
+      @Court.update(court_params)
       head :no_content
     end
   
@@ -33,12 +33,12 @@ class CourtsController < ApplicationController
   
     private
   
-    def Court_params
+    def court_params
       # whitelist params
-      params.permit(:title, :created_by)
+      params.permit("number")
     end
   
-    def set_Court
+    def set_court
       @Court = Court.find(params[:id])
     end
   end
