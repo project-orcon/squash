@@ -1,5 +1,5 @@
 class BookingsController < ApplicationController
-
+    before_action :authenticate_user!
     before_action :set_court
     before_action :set_court_booking, only: [:show, :update, :destroy]
   

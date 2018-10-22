@@ -1,6 +1,9 @@
     # app/controllers/Courts_controller.rb
 class CourtsController < ApplicationController
+    before_action :authenticate_user!
     before_action :set_court, only: [:show, :update, :destroy]
+    
+
   
     # GET /Courts
     def index
