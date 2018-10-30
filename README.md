@@ -4,7 +4,7 @@ An app that manages bookings for tennis and squash clubs. The backend will be a 
 
 ## UML diagram
 
- <img src=“http://i67.tinypic.com/2liwktl.jpg”>
+ <img src="http://i67.tinypic.com/2liwktl.jpg" />
 
 
 
