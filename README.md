@@ -1,24 +1,9 @@
-# README
+# Club bookings app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An app that manages bookings for tennis and squash clubs. The backend will be a ruby on rails api while the frontend will be in Vue.js.
 
-Things you may want to cover:
+## UML diagram
+![alt text](http://i67.tinypic.com/2liwktl.jpg “UML diagram“)
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
