@@ -6,5 +6,9 @@ An app that manages bookings for tennis and squash clubs. The backend will be a 
 
  <img src="http://i67.tinypic.com/2liwktl.jpg" />
 
+ ## Postman docs
+
+ https://documenter.getpostman.com/view/4331338/RzZ7mzWX
+
 
 
