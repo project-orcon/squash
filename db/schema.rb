@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181031034604) do
+ActiveRecord::Schema.define(version: 20181107133616) do
 
   create_table "addresses", force: :cascade do |t|
     t.string "line1"
@@ -87,6 +87,8 @@ ActiveRecord::Schema.define(version: 20181031034604) do
     t.integer "amount"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "owner_id"
+    t.index ["owner_id"], name: "index_prices_on_owner_id"
   end
 
   create_table "users", force: :cascade do |t|
