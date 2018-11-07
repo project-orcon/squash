@@ -12,11 +12,14 @@ Rails.application.routes.draw do
                registrations: 'registrations'
              }
   
-  Rails.application.routes.draw do
-    resources :courts do
-      resources :bookings
-    end
-  end
+             scope module: 'owner', path: 'owner' do 
+              resources :clubs 
+              resources :courts
+              resources :availabilities
+              resources :prices
+              resources :bookings, only: [:index]
+              resources :payments, only: [:index]
+              end
 
 
 end

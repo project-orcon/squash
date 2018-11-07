@@ -21,7 +21,6 @@ Devise.setup do |config|
 
   #configure JWT devise
   config.jwt do |jwt|
-    Dotenv::Railtie.load
     jwt.secret = ENV['DEVISE_JWT_SECRET_KEY']
     jwt.dispatch_requests = [
       ['POST', %r{^/login$}]
