@@ -12,12 +12,14 @@ class Owner::ClubsController < ApplicationController
         end
 
         def create
-            
-            puts params
-            puts "cpaf",club_params
             @club= current_user.clubs.create!(club_params)
             json_response(@club, :created)
 
+        end
+
+        def update
+            @club.update!(club_params);
+            json_response(@club);
         end
 
         def show
@@ -34,7 +36,7 @@ class Owner::ClubsController < ApplicationController
         end
 
         def set_club
-            @club= club.find(params[:id])
+            @club= Club.find(params[:id])
         end
 end
 
